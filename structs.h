@@ -554,3 +554,27 @@ Vector3 W2S(Vector3 WorldLocation)
 
 	return Screenlocation;
 }
+
+struct FVector2D {
+ float X;
+ float Y;
+};
+
+// FAxis
+
+struct FAxis {
+ FVector Axis;
+ bool bInLocalSpace;
+};
+
+struct FBox {
+ FVector Min;
+ FVector Max;
+ char IsValid;
+};
+
+struct FBox2D {
+ FVector2D Min;
+ FVector2D Max;
+ char bIsValid;
+};
